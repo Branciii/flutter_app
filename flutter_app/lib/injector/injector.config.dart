@@ -12,6 +12,8 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
+import '../features/user_information/bloc/notifications_switch_cubit.dart'
+    as _i4;
 import '../router/app_router.dart' as _i3;
 
 extension GetItInjectableX on _i1.GetIt {
@@ -26,6 +28,8 @@ extension GetItInjectableX on _i1.GetIt {
       environmentFilter,
     );
     gh.singleton<_i3.IRouter>(_i3.AppRouter());
+    gh.factory<_i4.NotificationsSwitchCubit>(
+        () => _i4.NotificationsSwitchCubit());
     return this;
   }
 }
