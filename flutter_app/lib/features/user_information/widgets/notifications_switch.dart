@@ -17,18 +17,8 @@ class NotificationsSwitch extends StatelessWidget {
   }
 }
 
-class NotificationsWidget extends StatefulWidget {
+class NotificationsWidget extends StatelessWidget {
   const NotificationsWidget({Key? key}) : super(key: key);
-
-  @override
-  State<NotificationsWidget> createState() => NotificationsSwitchWidgetState();
-}
-
-class NotificationsSwitchWidgetState extends State<NotificationsWidget> {
-  @override
-  initState() {
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

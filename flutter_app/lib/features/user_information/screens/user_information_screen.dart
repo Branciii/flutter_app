@@ -29,13 +29,11 @@ class UserInformationWidget extends StatefulWidget {
 
 class UserInformationState extends State<UserInformationWidget> {
   late bool showAdditionalInfo;
-  late bool enabledNotifications;
   late bool enabledMessages;
 
   @override
   initState() {
     showAdditionalInfo = false;
-    enabledNotifications = false;
     enabledMessages = false;
     super.initState();
   }
@@ -94,26 +92,6 @@ class UserInformationState extends State<UserInformationWidget> {
                 borderRadius: BorderRadius.circular(6)),
             child: Column(
               children: [
-                /*Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 10),
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Padding(
-                            padding: EdgeInsets.only(left: 5),
-                            child: Text('Notifications',
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.w400))),
-                        Switch(
-                          activeColor: ThemeColours.navbarColour,
-                          value: enabledNotifications,
-                          onChanged: (value) => setState(() {
-                            enabledNotifications = value;
-                          }),
-                        ),
-                      ]),
-                ),*/
                 const NotificationsSwitch(),
                 const SizedBox(height: 10),
                 Padding(

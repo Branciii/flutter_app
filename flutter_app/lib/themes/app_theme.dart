@@ -3,10 +3,6 @@ import 'package:flutter/services.dart';
 import 'theme_colours.dart';
 
 class AppTheme {
-  TextStyle defaultTextStyle = const TextStyle(
-    fontFamily: "Inter",
-  );
-
   ThemeData get lightThemeData => ThemeData(
       brightness: Brightness.light,
       appBarTheme: const AppBarTheme(

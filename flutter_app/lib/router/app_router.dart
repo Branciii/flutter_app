@@ -35,7 +35,7 @@ class AppRouter extends IRouter {
           name: AppRouteName.homeScreen.routeName,
           path: AppRouteName.homeScreen.path,
           pageBuilder: (context, state) =>
-              MaterialPage<void>(key: state.pageKey, child: HomeScreen()))
+              MaterialPage<void>(key: state.pageKey, child: const HomeScreen()))
     ],
   );
 }
